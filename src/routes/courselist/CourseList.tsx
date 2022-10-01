@@ -4,7 +4,7 @@ import ClassListItem from '../../components/ClassListItem/ClassListItem';
 export default function CourseList(props: {children?: React.ReactNode}) {
     return (
       <div>
-        <div>  
+        <div className='centeredPanel'>  
           <ClassListItem></ClassListItem>
         </div>
         {props.children}

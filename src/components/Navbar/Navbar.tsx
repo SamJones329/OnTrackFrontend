@@ -11,15 +11,15 @@ import './Navbar.scss';
 
 export default function Navbar(props: {children?: React.ReactNode}) {
   return (
-    <div className='navbar'>
+    <div className='custom-nav'>
       <Container fluid>
         <Row>
           <Col md={4}>
             <Row>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/"} className="link-text">Home</Link></Col>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/courselist"} className="link-text">Course List</Link></Col>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/flowchart"} className="link-text">Flowchart</Link></Col>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/about"} className="link-text">About</Link></Col>
+              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/"} className="custom-link">Home</Link></Col>
+              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/courselist"} className="custom-link">Course List</Link></Col>
+              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/flowchart"} className="custom-link">Flowchart</Link></Col>
+              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/about"} className="custom-link">About</Link></Col>
             </Row>
           </Col>
         </Row>

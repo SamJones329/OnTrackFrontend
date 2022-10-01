@@ -12,7 +12,7 @@ import About from './routes/about/About';
 import Navbar from './components/Navbar/Navbar';
 import CourseList from './routes/courselist/CourseList';
 import Flowchart from './routes/flowchart/Flowchart';
-import 'bootstrap/dist/css/bootstrap-grid.css'
+
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
