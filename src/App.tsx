@@ -26,7 +26,12 @@ function App() {
     </Route>
   ))
   return (
-    <RouterProvider router={router} />
+    <>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@1&display=swap" rel="stylesheet" /> 
+      <RouterProvider router={router} />
+    </>
   );
 }
 

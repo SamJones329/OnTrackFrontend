@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Container, Form, Row, Col } from 'react-bootstrap';
-import { start } from 'repl';
 import ClassList from '../../components/ClassList/ClassList';
-import ClassListItem from '../../components/ClassList/ClassListItem';
 import { getMajors, getMajorCourses } from '../../db';
 import { useConstructor } from '../../helpers/hooks';
 
