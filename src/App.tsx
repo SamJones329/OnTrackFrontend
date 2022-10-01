@@ -18,7 +18,7 @@ function App() {
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/">
       <Route path="geaux-hack-2022">
-        <Route index element={<Home />} />
+        <Route index element={<> <Navbar /> <Home /> </>} />
         <Route path="about" element={<About />} />
         <Route path="courselist" element={<CourseList />}/>
         <Route path="flowchart" element={<Flowchart />}/>
@@ -26,9 +26,7 @@ function App() {
     </Route>
   ))
   return (
-    <Navbar>
-      <RouterProvider router={router} />
-    </Navbar>
+    <RouterProvider router={router} />
   );
 }
 
