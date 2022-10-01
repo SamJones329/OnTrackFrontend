@@ -10,8 +10,8 @@ import './App.css';
 import Home from './routes/Home';
 import About from './routes/about/About';
 import Navbar from './components/Navbar';
-import CourseList from './components/CourseList';
-import Flowchart from './components/Flowchart';
+import CourseList from './routes/courselist/CourseList';
+import Flowchart from './routes/flowchart/Flowchart';
 import 'bootstrap/dist/css/bootstrap-grid.css'
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
     <Route path="/">
       <Route path="geaux-hack-2022">
         <Route index element={<> <Navbar /> <Home /> </>} />
-        <Route path="about" element={<About />} />
-        <Route path="courselist" element={<CourseList />}/>
-        <Route path="flowchart" element={<Flowchart />}/>
+        <Route path="about" element={<> <Navbar /> <About /> </>} />
+        <Route path="courselist" element={<> <Navbar /> <CourseList /> </>}/>
+        <Route path="flowchart" element={<> <Navbar /><Flowchart /> </>}/>
       </Route>
     </Route>
   ))
