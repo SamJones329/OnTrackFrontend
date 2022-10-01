@@ -42,7 +42,7 @@ export default function ClassListItem(props: ClassListItemProps) {
       <Accordion.Header>
         <Container>
           <Row>
-            <Col md={2} id='courseNumber'>{props.courseDept}</Col>
+            <Col md={2} id='courseNumber'>{props.courseDept + " " + props.courseNumber}</Col>
             <Col md={6} id='courseName'>{props.courseName}</Col>
           </Row>
         </Container>
