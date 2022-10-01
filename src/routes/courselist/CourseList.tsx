@@ -32,10 +32,12 @@ export default function CourseList(props: {}) {
 
   const classLists = []
   const res = getMajorCourses(major)
+  console.log(res)
   for(const semester of res) {
+    console.log(startYear + semester.semesterNum / 2, semester.semesterNum % 2)
     classLists.push(
       <ClassList 
-        semesterYear={startYear + semester.semesterNum / 2}
+        semesterYear={Math.floor(startYear + semester.semesterNum / 2)}
         semesterSeason={semester.semesterNum % 2 === 1 ? 'Fall' : 'Spring'}
         classes={semester.classes}
       />
@@ -85,7 +87,7 @@ export default function CourseList(props: {}) {
           </Row>
         </Form>
         <div className='centeredPanel'>  
-          
+          {classLists}
         </div>
       </Container>
     )

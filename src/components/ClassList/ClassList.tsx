@@ -30,7 +30,7 @@ export default function ClassList(props: ClassListProps) {
 
   return (
     <div>
-      <h1 id="semester" className="accordion-label">Fall 2077</h1>
+      <h1 id="semester" className="accordion-label">{props.semesterSeason + " " + props.semesterYear}</h1>
         <Accordion alwaysOpen style={{width: "50em"}}>
           {classElems}
         </Accordion>
