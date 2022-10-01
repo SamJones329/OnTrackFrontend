@@ -1,5 +1,3 @@
-import initSqlJs from 'sql.js';
-import { BASE_PATH } from './Constants';
 let initdone: boolean = false;
 
 async function initDB() {
