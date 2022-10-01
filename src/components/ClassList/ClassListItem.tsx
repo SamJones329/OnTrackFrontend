@@ -37,7 +37,7 @@ export default function ClassListItem(props: ClassListItemProps) {
   }
 
   return (
-    <Accordion.Item eventKey={props.accordionEventKey} id={props.courseDept + props.courseNumber}>
+    <Accordion.Item eventKey={props.accordionEventKey} id={props.courseDept + props.courseNumber} className='accordion-pad'>
       <Accordion.Header>
         <Container>
           <Row>
