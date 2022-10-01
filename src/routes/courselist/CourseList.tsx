@@ -4,6 +4,8 @@ import ClassList from '../../components/ClassList/ClassList';
 import { getMajors, getMajorCourses } from '../../db';
 import { useConstructor } from '../../helpers/hooks';
 
+import "./CourseList.scss"
+
 let majors: string[];
 export default function CourseList(props: {}) {
   useConstructor(() => {
@@ -45,7 +47,9 @@ export default function CourseList(props: {}) {
   }
   
   return (
+    <header className="App-header">
       <Container>
+        <div  className='spacing'>
         <Form>
           <Row>
             <Col xs={2}>
@@ -86,9 +90,11 @@ export default function CourseList(props: {}) {
             </Col>
           </Row>
         </Form>
-        <div className='centeredPanel'>  
+        </div>
+        <div>  
           {classLists}
         </div>
       </Container>
+    </header>
     )
 }
