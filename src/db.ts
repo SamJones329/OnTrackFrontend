@@ -442,12 +442,12 @@ const majors: {[index: string]: Semester[]} = {
         },
         {
           courseDept: 'CSC',
-          courseNumber: 2000,
-          courseName: '2000+ CSC Course',
-          courseDesc: 'Set algebra including mappings and relations; algebraic structures including semigroups and groups; elements of the theory of directed and undirected graphs; Boolean algebra and propositional logic; these structures applied to various areas of computer science.',
+          courseNumber: 4332,
+          courseName: 'Software Testing',
+          courseDesc: 'Concepts of software testing and quality assurance, including test generation, test oracles, black box and white box testing, integration testing, test coverage, regression testing, mutation testing, program analysis, test driven development, test automation, and test prioritization.',
           hours: 3,
           substitutions: [],
-          prereqs: ['CSC1351', 'CSC2259'],
+          prereqs: ['CSC4330'],
           coreqs: []
         },
         {
