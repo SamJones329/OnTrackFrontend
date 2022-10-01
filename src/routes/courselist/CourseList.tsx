@@ -42,6 +42,7 @@ export default function CourseList(props: {}) {
         semesterYear={Math.floor(startYear + semester.semesterNum / 2)}
         semesterSeason={semester.semesterNum % 2 === 1 ? 'Fall' : 'Spring'}
         classes={semester.classes}
+        key={`${startYear}${semester.semesterNum}`}
       />
     )
   }
