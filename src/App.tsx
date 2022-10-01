@@ -9,7 +9,7 @@ import {
 import './App.css';
 import Home from './routes/Home';
 import About from './routes/about/About';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import CourseList from './routes/courselist/CourseList';
 import Flowchart from './routes/flowchart/Flowchart';
 import 'bootstrap/dist/css/bootstrap-grid.css'
