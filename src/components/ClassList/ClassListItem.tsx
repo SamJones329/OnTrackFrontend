@@ -49,8 +49,14 @@ export default function ClassListItem(props: ClassListItemProps) {
       </Accordion.Header>
       <Accordion.Body>
         {props.courseDesc}
-        Pre-Requisites: {prereqs}
-        Co-Requisites: {coreqs}
+        {prereqs.length
+          ? <><span>{" Pre-Requisites: "}</span> {prereqs}</>
+          : <></>
+        }
+        {coreqs.length
+          ? <><span>{" Co-Requisites: "}</span> {coreqs}</>
+          : <></>
+        }
       </Accordion.Body>
     </Accordion.Item>
   )
