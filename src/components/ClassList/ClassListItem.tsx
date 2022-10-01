@@ -28,7 +28,7 @@ export default function ClassListItem(props: ClassListItemProps) {
             </Row>
           </Container>
         </Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Body className="form-bg">
           {props.courseDesc}
           {props.prereqIDs}
           {props.coreqIDs}

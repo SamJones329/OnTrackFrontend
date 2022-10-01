@@ -50,6 +50,7 @@ export default function CourseList(props: {}) {
     <header className="App-header">
       <Container>
         <div  className='spacing'>
+          <h1 className='spacing'>Course List</h1>
         <Form>
           <Row>
             <Col xs={2}>
@@ -59,6 +60,7 @@ export default function CourseList(props: {}) {
                   value={startYear} 
                   onChange={(e) => {e.preventDefault(); changeStartYear(parseInt(e.target.value))}} 
                   aria-label="start year of degree"
+                  className='form-bg'
                 >
                   {yearOpts(minStartYear, maxStartYear)}
                 </Form.Select>
@@ -71,6 +73,7 @@ export default function CourseList(props: {}) {
                   value={endYear}
                   onChange={(e) => {e.preventDefault(); changeEndYear(parseInt(e.target.value))}} 
                   aria-label="start year of degree"
+                  className='form-bg'
                 >
                   {yearOpts(startYear+4, maxStartYear+4)}
                 </Form.Select>
@@ -83,6 +86,7 @@ export default function CourseList(props: {}) {
                   value={major}
                   onChange={(e) => {e.preventDefault(); changeMajor(e.target.value)}} 
                   aria-label="start year of degree"
+                  className='form-bg'
                 >
                   {majorOpts()}
                 </Form.Select>
