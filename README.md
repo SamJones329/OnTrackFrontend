@@ -30,6 +30,7 @@ Developed from Friday September 30, 2022 5:30PM CT until Saturday October 1, 202
 
 ## Links
 [Website](samjones329.github.io/geaux-hack-2022)
+
 [Hackthon Devpost](https://geaux-hack-2022.devpost.com/)
 
 ## Running yourself
