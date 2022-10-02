@@ -19,6 +19,7 @@ The prompt we chose was as follows:
 - React-Router
 - Bootstrap
 - GitHub Pages
+- Node+Yarn
 
 ## Contributors
 - Samuel Jones
@@ -30,3 +31,9 @@ Developed from Friday September 30, 2022 5:30PM CT until Saturday October 1, 202
 ## Links
 [Website](samjones329.github.io/geaux-hack-2022)
 [Hackthon Devpost](https://geaux-hack-2022.devpost.com/)
+
+## Running yourself
+To run this application yourself, clone the repository onto your computer and make sure you have [Node.js](https://nodejs.org/en/download/) installed and [yarn installed globally](https://classic.yarnpkg.com/lang/en/docs/install/). Then from the root project directory, run: 
+- `yarn install` to install all dependencies
+- `yarn start` to start a development server
+- `yarn build` to build statically to ./build
