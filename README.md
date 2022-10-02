@@ -1,7 +1,6 @@
 # Geaux Hack 2022
 ## Team Cowboy Coders
-The **Cowbody Coders**' submission for the 2022 LSU Geaux Hack.
-State of OnTrack code at the submission point of LSU Geaux Hack 2022.
+**OnTrack**. An application to help students plan their degree path. The **Cowbody Coders**' submission for the 2022 LSU Geaux Hack.
 
 ## Award 🏆
 2nd Place
