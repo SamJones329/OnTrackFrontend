@@ -29,7 +29,7 @@ The prompt we chose was as follows:
 Developed from Friday September 30, 2022 5:30PM CT until Saturday October 1, 2022 5:00PM CT.
 
 ## Links
-[Website](samjones329.github.io/geaux-hack-2022)
+[Website](https://samjones329.github.io/geaux-hack-2022)
 
 [Hackthon Devpost](https://geaux-hack-2022.devpost.com/)
 
