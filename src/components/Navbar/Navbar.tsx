@@ -2,8 +2,10 @@ import * as React from 'react';
 import {
   Container,
   Row,
-  Col
+  Col, 
+  Nav
 } from "react-bootstrap";
+import {Navbar as BSNavbar} from "react-bootstrap"
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
@@ -11,18 +13,16 @@ import './Navbar.scss';
 export default function Navbar(props: {children?: React.ReactNode}) {
   return (
     <div className='custom-nav'>
-      <Container fluid>
-        <Row>
-          <Col md={4}>
-            <Row>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/"} className="custom-link">Home</Link></Col>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/courselist"} className="custom-link">Course List</Link></Col>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/flowchart"} className="custom-link">Flowchart</Link></Col>
-              <Col md={3} className="link-button"><Link to={"/geaux-hack-2022/about"} className="custom-link">About</Link></Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
+      <BSNavbar>
+        <Container className='nav-container'>
+          <BSNavbar.Collapse>
+            <Nav.Link className="custom-link" href="/geaux-hack-2022/">Home</Nav.Link>
+            <Nav.Link className="custom-link" href="/geaux-hack-2022/courselist">Course List</Nav.Link>
+            <Nav.Link className="custom-link" href="/geaux-hack-2022/flowchart">Flowchart</Nav.Link>
+            <Nav.Link className="custom-link" href="/geaux-hack-2022/about">About</Nav.Link>
+          </BSNavbar.Collapse>
+        </Container>
+      </BSNavbar>
       {props.children}
     </div>
   )

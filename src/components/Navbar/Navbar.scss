@@ -1,17 +1,20 @@
 .custom-nav{
-    background-color: #293241;
+    background-color: #293241; 
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
 }
 
-.link-button{
-    padding: 1.5em 0 1.5em 0;
-    text-align: center;
+.container.nav-container{
+    margin-left: 0% !important;
 }
 
 a.custom-link{
-    color: #98c1d9;
-    text-decoration: none;
+    color: #98c1d9 !important;
+    text-decoration: none !important;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 a:hover.custom-link{
-    color: #e0fbfc;
+    color: #e0fbfc !important;
 }
