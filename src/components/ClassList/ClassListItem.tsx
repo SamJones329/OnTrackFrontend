@@ -3,10 +3,12 @@ import {
     Container,
     Row,
     Col,
-    Accordion
+    Accordion,
+    Button
   } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import "./ClassListItem.scss"
+import {CopyToClipboard} from "react-copy-to-clipboard";
+import "./ClassListItem.scss";
 
 interface ClassListItemProps {
   courseDept: string
@@ -47,15 +49,29 @@ export default function ClassListItem(props: ClassListItemProps) {
         </Container>
       </Accordion.Header>
       <Accordion.Body className="form-bg">
-        {props.courseDesc}
-        {prereqs.length
-          ? <><span>{" Pre-Requisites: "}</span> {prereqs}</>
-          : <></>
-        }
-        {coreqs.length
-          ? <><span>{" Co-Requisites: "}</span> {coreqs}</>
-          : <></>
-        }
+        <Container>
+          <Row>
+            <Col md={11}>
+              {props.courseDesc}
+              {prereqs.length
+                ? <><span>{" Pre-Requisites: "}</span> {prereqs}</>
+                : <></>
+              }
+              {coreqs.length
+                ? <><span>{" Co-Requisites: "}</span> {coreqs}</>
+                : <></>
+              }
+            </Col>
+            <Col md={1}>
+              <CopyToClipboard text={props.courseDesc}>
+                <Button>Copy</Button>
+              </CopyToClipboard>
+            </Col>
+          </Row>
+        </Container>
+        
+        
+
       </Accordion.Body>
     </Accordion.Item>
   )
