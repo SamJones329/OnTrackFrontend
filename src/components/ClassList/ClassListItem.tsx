@@ -8,6 +8,8 @@ import {
   } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import {CopyToClipboard} from "react-copy-to-clipboard";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import "./ClassListItem.scss";
 
 interface ClassListItemProps {
@@ -64,14 +66,11 @@ export default function ClassListItem(props: ClassListItemProps) {
             </Col>
             <Col md={1}>
               <CopyToClipboard text={props.courseDesc}>
-                <Button>Copy</Button>
+                <Button><FontAwesomeIcon icon={regular('copy')}/></Button>
               </CopyToClipboard>
             </Col>
           </Row>
         </Container>
-        
-        
-
       </Accordion.Body>
     </Accordion.Item>
   )
